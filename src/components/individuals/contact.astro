@@ -1,6 +1,17 @@
+---
+import { Image } from "astro:assets";
+import contacShape from "../../../public/individual/contacShape.png"
+import Vector from "../../../public/individual/Vector.png"
+
+---
+
 <section>
-    <div class="px-[1rem] lg:px-[10rem] lg:py-[6rem] md:py-[4.5rem] py-[4.5rem] ">
+    <div class="px-[1rem] lg:px-[10rem] lg:py-[6rem] md:py-[4.5rem] h-[60rem] py-[4.5rem] relative ">
+           <Image src={contacShape} alt="shape" class="absolute top-0 left-0 hidden lg:block " />
+   
+
         <h2 class="text-[#101828] lg:text-[4rem] md:text-[3rem] text-[1.5rem]  font-bold text-center">LET US KNOW HOW WE CAN HELP YOUR BUSINESS.</h2>
-        <p></p>
+          <Image src={Vector} alt="shape" class="absolute bottom-0 right-0 hidden lg:block" />
+
     </div>
 </section>
