@@ -1,0 +1,33 @@
+---
+import { custom } from "./Data.astro";
+import check from "../../Images/check.svg"
+import { Image } from "astro:assets";
+---
+
+<section class="w-[100%] text-center">
+    <div class="lg:px-[10rem]">
+         <p class="text-[#FF601F] text-[1.25rem] font-bold mt-[6rem]">WHAT WE CAN DO FOR YOU</p>
+         <p class="text-[#101828] lg:text-[4rem] md:text-[3rem]  font-semibold mt-[1.5rem]">Custom Solutions for...</p>
+    </div>
+ <div class="flex gap-[1.94rem] lg:px-[7rem] mt-[3rem] text-left lg:flex-row md:flex-col flex-col md:w-[90%] w-[90%] mx-auto">
+  {custom.map((item) => (
+    <div class={item.backgroundStyle} >
+    <div  class="lg:w-[32.25rem] md:w-[47rem]  p-[2rem]">
+      <h2 class="text-[#101828] lg:text-[2.25rem] md:text-[2rem] text-[1.5rem] font-[700] ">{item.title}</h2>
+      <ul class="gap-[0.5rem] flex flex-col mt-[1.5rem]">
+        {item.list.map((listItem) => (
+          <li  class={"text-[#1D2939] text-[1rem] font-[400] flex gap-[0.5rem] "}>
+            <Image src={check} alt="check"/>
+            {listItem}
+          </li>
+        ))}
+      </ul>
+      <p class="text-[#1D2939] text-[1rem] font-[400] mt-[2rem] ">{item.text}</p>
+    </div>
+    </div>
+  ))}
+</div>
+
+
+
+</section>

@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import shape from "../../Images/shape.svg";
+import { Potential } from "./Data.astro";
+import forwordArrow from "../../Images/forwardArrow.svg"
+
+---
+
+<section class="w-100%">
+  <div class="bg-[#f2f4f7]  md:mt-[6rem] mt-[3.5rem] relative">
+    <Image src={shape} alt="shape" class="absolute top-0 left-0 hidden lg:block " />
+    <div class="flex items-center justify-center flex-col">
+      <h2 class="text-[#101828] lg:text-[4rem] md:text-[3rem] text-[2rem] font-[600] text-center lg:mt-[6rem] md:mt-[4.5rem] mt-[4rem]">
+        Unlock Your <span class="text-[#FF601F]">Creative Potential</span>
+      </h2>
+      <p
+        class="text-[#1D2939] text-[1rem] font-[400] lg:w-[55%] md:w-[70%] mt-[1.5rem] text-center mx-auto"
+      >
+        Whether you're documenting your travels, sharing your daily adventures,
+        or building your personal brand, we're here to help.
+      </p>
+
+      <div class="flex gap-[1.94rem] lg:px-[7rem] mt-[3rem] lg:flex-row md:flex-col flex-col md:w-[90%] w-[90%] ">
+        {
+          Potential.map((item) => (
+            <div class="h-[23rem] lg:w-[21.6rem]  bg-[white] rounded-lg">
+              <Image src={item.picture} alt="images" class="lg:h-[12.8rem] md:h-[14rem] w-[100%] rounded-lg" />
+              <h2 class="text-[#1D2939] text-[1.125rem] font-[700] mt-[2rem] text-center">
+                {item.heading} <span class="text-[#FF601F]">{item.span}</span>
+              </h2>
+              <p class="text-[#1D2939] text-[1rem] font-[400]  lg:w-[21rem] md:w-[75%] w-[88%] text-center mx-auto mt-[0.5rem]">
+                {item.text}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+      <p class="text-[#1D2939] text-[1rem] font-[400] mt-[2.64rem] w-[85%]  text-center ">
+        With tifi.tv, your creative vision transforms into captivating visual
+        stories.
+      </p> 
+      <button class=" mt-[2rem] mb-[6rem] text-[1rem] font-extrabold text-[white] bg-[#FF601F] rounded-[0.5rem] w-[10.4rem] h-[3rem] flex gap-[0.5rem] pt-[0.75rem] pl-[1.25rem]">LET’S TALK <Image src={forwordArrow} alt="Arrow"/></button>
+    </div>
+  </div>
+</section>
