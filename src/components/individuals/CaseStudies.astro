@@ -1,0 +1,45 @@
+---
+import { CaseStudy } from "./Data.astro";
+import { Image } from "astro:assets";
+import Arrow from "../../../public/individual/Arrow.svg"
+---
+
+<section class="w-[100%] mt-[4.5rem]">
+  <div class="bg-[#f2f4f7] ">
+    <div class="flex items-center justify-center flex-col">
+      <h2
+        class="mt-[4.5rem] md:text-[3rem] text-[2rem] font-semibold text-[#101828]"
+      >
+        Case <span class="text-[#FF601F]">Studies</span>
+      </h2>
+      <p
+        class="text-center lg:w-[49%] md:w-[80%] w-[90%] mt-[1.5rem] text-[1rem] font-[400] text-[#344054]"
+      >
+        Explore some of our standout projects, each representing a unique facet
+        of our video editing and storytelling expertise. These projects
+        transcend mere videos; they're captivating narratives that inspire and
+        make an impact.
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-[1.94rem] md:gap-[0.5rem] lg:px-[7rem] md:w-[90%] w-[90%] mt-[3rem] mx-auto"
+    >
+      {
+        CaseStudy.map((item) => (
+          <div class=" bg-[#FCFCFD] h-[21rem] md:w-[20rem] p-[1.94rem] relative mb-24 ">
+            <h3 class="text-2xl font-bold mt-[1.88rem] text-[#1D2939] w-[18rem] ">
+              {item.title}
+            </h3>
+            <p class="text-[#344054] font-[400] text-[1rem] mt-[1.5rem]">
+              {item.text}
+            </p>
+            <button class=" flex items-center gap-[0.5rem] justify-center bg-transparent text-[#101828] text-[1rem] mb-[1rem] font-[800] border border-[#D0D5DD] w-[80%] h-[3rem]  mt-2 absolute bottom-2">
+              LEARN MORE
+              <Image src={Arrow} alt="arrow" class=""/>
+            </button>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
