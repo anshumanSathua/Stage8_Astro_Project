@@ -1,0 +1,84 @@
+---
+const videoEditing = [
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+  {
+    image: "./resouces/Image.svg",
+    type: "Video Editing",
+    title: "Time lapse and Mapping",
+    p: "We harness cutting-edge technology to capture the dynamic evolution of landscapes, cityscapes, and more.",
+  },
+];
+---
+
+<section class="custom-container mx-auto pb-[8rem]">
+  <div class="grid gap-4">
+    <h2 class="text-3xl font-bold text-center pb-7 pt-6">Featured</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        videoEditing.map((data) => (
+          <>
+            <div class="grid">
+              <img src={data.image} alt={data.title} class="w-full" />
+              <span class="pt-8 text-orange-500 font-bold text-sm">
+                {data.type}
+              </span>
+              <div class="flex justify-between items-center">
+                <h3 class="pt-3 text-2xl font-semibold">{data.title}</h3>
+                <img src="./resouces/Frame18.svg" alt="" class="w-6 h-6 mt-4" />
+              </div>
+              <p class="pt-3 text-base font-normal text-gray-500">{data.p}</p>
+            </div>
+          </>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .custom-container {
+    max-width: 1200px;
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media (max-width: 600px) {
+    .custom-container {
+      padding-inline: 1rem;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .custom-container {
+      padding-inline: 1.5rem;
+    }
+  }
+</style>

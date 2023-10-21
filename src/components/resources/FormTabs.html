@@ -1,0 +1,55 @@
+<section class="flex flex-col lg:flex-row items-center
+gap-3 py-16">
+    <div class="lg:flex-grow  w-full px-2">
+        <div class="flex gap-4 md:gap-8 lg:gap-10 justify-center
+         text-base font-normal border-2
+    border-x-0 border-t-0  overflow-x-scroll md:overflow-x-auto slider">
+            <button onclick="handleInnerNav(0)" id="0" data-active="true"
+                class="btn whitespace-nowrap border-4 border-x-0 border-t-0
+                border-orange-500 text-orange-500 pb-3 font-bold">
+                Business</button>
+            <button onclick="handleInnerNav(1)" id="1" data-active="false" class="btn whitespace-nowrap pb-4">
+                Individual
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .custom-container {
+        max-width: 1200px;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media (max-width: 600px) {
+        .custom-container {
+            padding-inline: 1rem;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .custom-container {
+            padding-inline: 1.5rem;
+        }
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+<script>
+    const handleInnerNav = (id) => {
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            if (button.id == id) {
+                button.dataset.active = "true";
+                button.classList.add('border-4', 'border-x-0', 'border-t-0', 'border-orange-500', 'text-orange-500', 'font-bold');
+            } else {
+                button.dataset.active = "false";
+                button.classList.remove('border-4', 'border-x-0', 'border-t-0', 'border-orange-500', 'text-orange-500', 'font-bold');
+            }
+        })
+    };
+</script>
