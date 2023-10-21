@@ -37,10 +37,14 @@
   <div
     class="pulseGallery w-full h-[600px] lg:h-[750px] flex flex-col justify-center items-center"
   >
-    <h4 class="redHat text-5xl md:text-7xl xl:text-[6.25rem] font-extrabold text-center text-white">
+    <h4
+      class="redHat text-5xl md:text-7xl xl:text-[6.25rem] font-extrabold text-center text-white"
+    >
       We Are the Pulse
     </h4>
-    <p class="container noto text-2xl text-[#F2F4F7] text-center mt-8">An Ad made for MTN.</p>
+    <p class="container noto text-2xl text-[#F2F4F7] text-center mt-8">
+      An Ad made for MTN.
+    </p>
     <button
       class="mt-12 py-3 px-5 w-fit bg-[rgba(255,255,255,0.17)] shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-white text-base font-extrabold rounded-lg flex items-center gap-3"
     >
@@ -50,10 +54,16 @@
   </div>
   <!-- Fourth Gallery -->
   <div
-    class="projectsGallery h-[600px] lg:h-[750px] w-full flex flex-col justify-center items-center relative"
+    class="projectsGallery h-[600px] lg:h-[750px] w-full flex flex-col justify-center items-center relative bg-[url('/landing/projectMobBg.png')] md:bg-[url('/landing/projectTabBg.png')] lg:bg-[url('/landing/projectGallery.png')] bg-no-repeat bg-contain bg-center lg:bg-[right_center]"
   >
+    <div
+      class="absolute top-o left-o right-o bottom-0 bg-[rgba(16,24,40,0.67)] w-full h-full"
+    >
+    </div>
     <div class="relative flex flex-col justify-center items-center">
-      <h4 class="redHat text-5xl md:text-7xl xl:text-[6.25rem] font-extrabold text-center text-white">
+      <h4
+        class="redHat text-5xl md:text-7xl xl:text-[6.25rem] font-extrabold text-center text-white"
+      >
         All Projects
       </h4>
       <p class="container noto text-2xl text-[#F2F4F7] text-center mt-8">
@@ -82,8 +92,9 @@
   }
 
   .projectsGallery {
-    /* background-image: url('/projectGallery.png');
+    /* background-image: url("/landing/projectGallery.png");
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center right; */
     background-color: #10182b;
   }
