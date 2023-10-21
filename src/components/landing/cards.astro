@@ -1,0 +1,99 @@
+---
+const cards = [
+  {
+    id: 1,
+    icon: "/landing/videoVertical.svg",
+    title: "Video Editing",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 2,
+    icon: "/landing/colorFilter.svg",
+    title: "Color Grading",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 3,
+    icon: "/landing/audioSquare.svg",
+    title: "Audio Editing",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 4,
+    icon: "/landing/doubleArrows.svg",
+    title: "Transitions and Effects",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 5,
+    icon: "/landing/truckFast.svg",
+    title: "Motion Graphics",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 6,
+    icon: "/landing/videoPlay.svg",
+    title: "Visual Effects",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 7,
+    icon: "/landing/timer.svg",
+    title: "Time-Lapse Editing",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+  {
+    id: 8,
+    icon: "/landing/star.svg",
+    title: "Video Cleanup",
+    description: "Comprehensive video editing to enhance the visual appeal",
+  },
+];
+---
+
+<div class="bg-[#FCFCFD] pt-20 pb-24">
+  <section class="container flex flex-col items-center">
+    <h3
+      class="hidden md:block text-[#101828] md:text-5xl xl:text-[4rem] font-semibold text-center"
+    >
+      ...we are your creative partner in <br />
+      <span class="text-[#FF601F]">visual</span> storytelling...
+    </h3>
+    <h3 class="md:hidden text-[#101828] text-[2rem] font-semibold text-center">
+      ...we are your creative partner in
+      <span class="text-[#FF601F]">visual</span> storytelling...
+    </h3>
+    <div class="flex flex-wrap justify-center gap-8 mt-16">
+      {
+        cards.map((card) => (
+          <div class="bg-[#F2F4F7] rounded-lg py-6 px-3 md:px-0 w-full md:w-[17.125rem] flex flex-col gap-4 items-center card">
+            <div class="bg-white rounded-full p-4 w-fit">
+              <img src={card.icon} alt="" />
+            </div>
+            <h4 class="text-[#1D2939] text-lg font-bold text-center mt-2">
+              {card.title}
+            </h4>
+            <p class="text-[#344054] text-base font-normal text-center">
+              {card.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+    <button
+      class="mt-12 border border-[#98A2B3] py-3 px-5 shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-[#1D2939] text-base font-extrabold rounded-lg flex items-center gap-3"
+      ><span>EXPLORE ALL SERVICES</span>
+      <img src="/landing/arrowUpBlue.png" alt="" />
+    </button>
+  </section>
+</div>
+
+<style>
+  section h3 {
+    font-family: "Red Hat Display", sans-serif;
+  }
+
+  .card {
+    font-family: "Noto Sans", sans-serif;
+  }
+</style>
