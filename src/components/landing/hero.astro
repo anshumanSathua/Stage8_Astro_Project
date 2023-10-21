@@ -1,6 +1,6 @@
-<div class="container h-[25rem] md:h-[35.875rem] rounded hero relative">
+<div class="custom-container h-[25rem] md:h-[35.875rem] rounded hero relative mx-auto">
   <div
-    class="relative flex flex-col justify-center items-center gap-6 pt-16 md:pt-28 lg:pt-32 z-40"
+    class="relative flex flex-col justify-center items-center gap-6 pt-16 md:pt-24 lg:pt-32 z-40"
   >
     <h1
       class="text-[#101828] text-[1.5rem] md:text-[4rem] text-7xl font-black text-center leading-[2rem] md:leading-normal"
@@ -26,11 +26,14 @@
   <div class="md:hidden absolute bottom-0 left-0 z-10">
     <img src="/landing/mobileHeroSideImgA.png" alt="side-img-B" />
   </div>
-  <div class="hidden md:block absolute bottom-0 right-0 z-20">
-    <img src="/landing/heroSideImgB.png" alt="side-img-B" />
-  </div>
   <div class="md:hidden absolute bottom-0 right-0 z-20">
     <img src="/landing/mobileHeroSideImgB.png" alt="side-img-B" />
+  </div>
+  <div class="hidden md:block xl:hidden absolute bottom-0 right-0 z-20">
+    <img src="/landing/tabHeroSideImgB.png" alt="side-img-B" />
+  </div>
+  <div class="hidden xl:block absolute bottom-0 right-0 z-20">
+    <img src="/landing/heroSideImgB.png" alt="side-img-B" />
   </div>
 </div>
 
@@ -49,5 +52,49 @@
 
   .hero p {
     font-family: "Noto Sans", sans-serif;
+  }
+
+  .custom-container {
+    max-width: 1145px;
+  }
+
+  @media (max-width: 640px) {
+    .custom-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 640px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .custom-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 768px;
+    }
+
+    @media (max-width: 1024px) {
+      .custom-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 1024px;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .custom-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 1280px;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      .custom-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        max-width: 1300px;
+      }
+    }
   }
 </style>
