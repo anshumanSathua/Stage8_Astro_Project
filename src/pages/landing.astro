@@ -7,12 +7,18 @@ import WhoWeHelp from "../components/landing/who-we-help.astro";
 import OurProcess from "../components/landing/our-process.astro";
 import Gallery from "../components/landing/gallery.astro";
 import Client from "../components/landing/client.astro";
+import Footer from "../components/Getintouch/Footer.astro";
+import Navbar from "../components/Getintouch/Navbar.astro";
+import Companies from "../components/landing/companies.astro";
+import Explore from "../components/landing/explore.astro";
 ---
 
 <Layout title="">
+  <!-- <Navbar /> -->
   <Hero />
+  <!-- <Companies /> -->
   <div
-    class="more w-full h-[350px] md:h-[600px] xl:h-[900px] flex justify-center items-center mt-20"
+    class="more w-full h-[350px] md:h-[600px] xl:h-[900px] flex justify-center items-center mt-5"
   >
     <h2
       class="text-[2.5rem] md:text-[4rem] xl:text-[6.25rem] text-center text-[rgba(255,255,255,0.21)] font-extrabold leading-[4rem] md:leading-[6.4rem] xl:leading-[10rem] uppercase"
@@ -43,7 +49,7 @@ import Client from "../components/landing/client.astro";
   <Gallery />
   <Client />
   <div
-    class="w-full h-[300px] md:h-[400px] xl:h-[600px] flex items-center mb-24 happyClient"
+    class="w-full h-[300px] md:h-[400px] xl:h-[600px] flex items-center happyClient"
   >
     <div class="container flex flex-col gap-3 lg:gap-0 xl:gap-3">
       <h4
@@ -58,6 +64,8 @@ import Client from "../components/landing/client.astro";
       </h4>
     </div>
   </div>
+  <Explore />
+  <!-- <Footer /> -->
 </Layout>
 
 <style>
