@@ -1,0 +1,97 @@
+---
+const cards = [
+  {
+    id: 1,
+    title: "Businesses and Brands",
+    description:
+      "We're dedicated to helping businesses harness the true potential of video content to connect with their audience, drive conversions, and elevate their brand presence.",
+    list: [
+      "Startups",
+      "Retail and E-Commerce",
+      "Real Estate",
+      "Entertainment and Media",
+      "Education and E-Learning",
+      "And many more",
+    ],
+    whiteBackground: true,
+    text: "We're here to help you. Reach out to us as soon as possible!",
+    button: "SEE BUSINESSES",
+  },
+  {
+    id: 2,
+    title: "Individuals",
+    description:
+      "Whether you're a content creator, a filmmaker, or someone with a passion for video, we're here to help you turn your vision into captivating reality, enhancing your storytelling, and making every frame count.",
+    list: [
+      "Content Creators",
+      "Travel Enthusiasts",
+      "Special Occasion Celebrants",
+      "Online Course Instructors",
+      "Creative Artists",
+      "And many more",
+    ],
+    whiteBackground: false,
+    button: "SEE INDIVIDUALS",
+  },
+];
+---
+
+<div class="bg-[#F2F4F7]">
+  <section class="py-16 md:py-24 flex flex-col gap-6 container">
+    <h4 class="text-[#FF601F] text-base md:text-xl font-bold noto text-center">
+      WHO WE HELP
+    </h4>
+    <h4
+      class="redHat text-[#101828] text-[2rem] md:text-5xl xl:text-[4rem] font-semibold text-center"
+    >
+      We offer Custom Solutions for...
+    </h4>
+    <div class="flex flex-col lg:flex-row gap-10 justify-center mt-8">
+      {
+        cards.map((card) => (
+          <div
+            class={`w-full lg:w-[36.25rem] rounded-2xl p-8 ${
+              card.whiteBackground
+                ? "bg-[#FCFCFD]"
+                : "bg-[rgba(255,96,31,0.10)]"
+            }`}
+          >
+            <div class="md:h-[32.25rem] flex flex-col md:justify-between">
+              <div>
+                <h4 class="noto text-[#101828] text-2xl md:text-[2rem] xl:text-4xl font-bold">
+                  {card.title}
+                </h4>
+                <p class="noto mt-4 text-[#1D2939]">{card.description}</p>
+                <div class="mt-6 flex flex-col gap-2">
+                  {card.list.map((lst) => (
+                    <div class="flex items-center gap-2">
+                      <img src="/landing/tick-circle.png" alt="" />
+                      <p class="noto text-[#1D2939]">{lst}</p>
+                    </div>
+                  ))}
+                </div>
+                {card.text && (
+                  <p class="mt-8 noto text-[#1D2939]">{card.text}</p>
+                )}
+              </div>
+
+              <button class="border border-[#98A2B3] py-3 px-5 w-fit shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-[#1D2939] text-base font-extrabold rounded-lg flex items-center gap-3 mt-12 md:mt-0">
+                <span>{card.button}</span>
+                <img src="/landing/arrowUpBlue.png" alt="" />
+              </button>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</div>
+
+<style is:global>
+  .noto {
+    font-family: "Noto Sans", sans-serif;
+  }
+  .redHat {
+    font-family: "Red Hat Display", sans-serif;
+  }
+</style>
