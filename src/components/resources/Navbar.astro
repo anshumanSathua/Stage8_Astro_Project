@@ -1,0 +1,39 @@
+<nav>
+  <div
+    class="custom-container mx-auto md:border
+  md:rounded-2xl p-4 py-5 md:py-auto border-b shadow-md flex items-center justify-between"
+  >
+    <img src="./resouces/Tifi.svg" alt="tifi" />
+    <div class="hidden md:flex items-center gap-8">
+      <a href="/about">About Us</a>
+      <a href="/portfolio">Portfolio</a>
+      <a href="/client">Client</a>
+      <a href="/resources">Resources</a>
+    </div>
+    <button
+      class="hidden md:block bg-orange-600 text-white text-sm font-semibold p-3 px-5 rounded-lg"
+      >LET'S TALK</button
+    >
+    <img src="./resouces/Menu.svg" alt="menu" class="block md:hidden" />
+  </div>
+</nav>
+
+<style>
+  .custom-container {
+    max-width: 1145px;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media (max-width: 600px) {
+    .custom-container {
+      padding-inline: 1rem;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .custom-container {
+      padding-inline: 1.5rem;
+    }
+  }
+</style>
