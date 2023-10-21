@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import { faq } from "./Data.astro";
+---
+
+<section>
+  <div class="px-[10rem] lg:py-[6rem] md:py-[4.5rem] py-[4.5rem]">
+    <h2 class="md:text-[4rem] text-[2rem] text-[#1D2939] font-semibold text-center">FAQ</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4  lg:mt-[3rem] md:mt-[1rem] mx-auto w-[90%]">
+    {
+      faq.map((item) => (
+        <div class="p-[1.5rem]  lg:w-[36rem] md:w-[21rem] bg-gray-100 rounded-md mx-auto  ">
+          <div class="flex  justify-between  w-[full] relative">
+            <h3 class="text-lg font-bold text-[#1D2939] text-[1.375rem] w-[80%]">{item.question}</h3>
+            <Image src={item.icon} alt="icons" class="bg-yellow" />
+          </div>
+          <p class="text-[#344054] text-[1.125rem] font-[400] w-[85%] mt-[1rem]">{item.answer}</p>
+        
+        </div>
+      ))
+    }
+  </div>
+</section>
+
