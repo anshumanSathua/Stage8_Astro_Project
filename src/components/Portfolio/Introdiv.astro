@@ -3,9 +3,9 @@ const {firstWord} = Astro.props
 const {secondWord} = Astro.props
 const {description} = Astro.props
 ---
-<div class="flex justify-center w-[1189px] h-[400px] bg-gradient-to-t from-gray-200 to-white rounded-2xl">
-<div class="w-[837px] h-[171px] font-semibold my-[5rem] ">
-    <h1 class="text-[72px] text-center">
+<div class="flex justify-center w-[1189px] h-[400px] bg-gradient-to-t from-gray-200 to-white rounded-2xl mt-3">
+<div class="py-12 font-semibold my-[5rem] ">
+    <h1 class="text-[32px] md:text-[64px] lg:text-[72px] text-center">
         <span class="text-[#FF601F] mr-[1rem]">
             {firstWord}
         </span>
@@ -13,6 +13,6 @@ const {description} = Astro.props
             {secondWord}
         </span>
     </h1>
-    <p class="text-base font-normal text-center">{description}</p>
+    <p class="text-base font-normal text-center md:w-[70%] md:mx-auto">{description}</p>
 </div>
 </div>
