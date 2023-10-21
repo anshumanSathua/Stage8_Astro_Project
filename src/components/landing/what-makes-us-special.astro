@@ -1,0 +1,102 @@
+---
+const cards = [
+  {
+    id: 1,
+    key: "01",
+    title: {
+      id: "sentence1",
+      text: "We Craft Compelling Media",
+    },
+    description:
+      "We empower you to create captivating stories that resonate with your audience.",
+    image: "/landing/Frame 69.png",
+    mobileImg: "/landing/mobileSpecialA.png",
+  },
+  {
+    id: 2,
+    key: "02",
+    title: {
+      id: "sentence2",
+      text: "We Stay Ahead of Trends",
+    },
+    description:
+      "We provide insights to help you navigate the ever-changing video landscape, ensuring your content remains relevant.",
+    image: "/landing/Frame 68.png",
+    mobileImg: "/landing/mobileSpecialB.png",
+  },
+  {
+    id: 3,
+    key: "03",
+    title: {
+      id: "sentence3",
+      text: "We Elevate Visual Quality",
+    },
+    description:
+      "We enhance your videos to ensure they are visually stunning, leaving a lasting impact.",
+    image: "/landing/Frame 66.png",
+    mobileImg: "/landing/mobileSpecialC.png",
+  },
+];
+---
+
+<section
+  class="border-t border-t-[#667085] pb-40 flex flex-col items-center gap-20 bg-[#FCFCFD]"
+>
+  <h4 class="text-[#101828] mt-24 text-[2rem] md:text-5xl xl:text-[4rem] font-semibold text-center">
+    ...but, what makes us so special?
+  </h4>
+  <div class="container flex flex-col gap-12 items-center">
+    {
+      cards.map((card) => (
+        <div class="flex flex-col lg:flex-row gap-12 lg:items-center">
+          <div class="md:w-[28.375rem]">
+            <h4 class="text-[#D0D5DD] text-[3.375rem] font-bold">{card.key}</h4>
+            <h4 id={card.title.id} class="text-[#101828] text-2xl xl:text-[2rem] font-medium leading-[3.2rem]">
+              {card.title.text}
+            </h4>
+            <p class="text-[#344054] font-normal leading-[1.6rem] w-full lg:w-[95%]">
+              {card.description}
+            </p>
+          </div>
+          <div class="hidden md:flex">
+            <img src={card.image} alt="" />
+          </div>
+          <div class="md:hidden">
+            <img src={card.mobileImg} alt="">
+
+            </div>
+        </div>
+      ))
+    }
+  </div>
+  <button
+    class="border border-[#98A2B3] py-3 px-5 shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-[#1D2939] text-base font-extrabold rounded-lg flex items-center gap-3"
+    ><span>VIEW RECENT WORK</span>
+    <img src="/landing/arrowUpBlue.png" alt="" />
+  </button>
+</section>
+
+<style>
+  h4 {
+    font-family: "Red Hat Display", sans-serif;
+  }
+</style>
+
+<script>
+  const sentence1 = document.getElementById("sentence1");
+  const sentence2 = document.getElementById("sentence2");
+  const sentence3 = document.getElementById("sentence3");
+
+  sentence1.innerHTML = sentence1.innerHTML.replace(
+    "Craft",
+    '<span style="color: #FF601F;">Craft</span>'
+  );
+  sentence2.innerHTML = sentence2.innerHTML.replace(
+    "Ahead",
+    '<span style="color: #FF601F;">Ahead</span>'
+  );
+  sentence3.innerHTML = sentence3.innerHTML.replace(
+    "Quality",
+    '<span style="color: #FF601F;">Quality</span>'
+  );
+</script>

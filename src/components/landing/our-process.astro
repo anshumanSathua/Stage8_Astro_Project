@@ -1,0 +1,93 @@
+---
+const cards = [
+  {
+    id: 1,
+    image: "/landing/processCardA.png",
+    tabletImg: "/landing/tabletProcessA.png",
+    title: "Strategic Collaboration",
+    description:
+      "We collaborate with you to translate your ideas into captivating visual narratives that meet your goals.",
+  },
+  {
+    id: 2,
+    image: "/landing/processCardB.png",
+    tabletImg: "/landing/tabletProcessB.png",
+    title: "Professional Talent",
+    description:
+      "We bring together a pool of skilled video editors, cinematographers, and storytellers who are passionate about their craft.",
+  },
+  {
+    id: 3,
+    image: "/landing/processCardC.png",
+    tabletImg: "/landing/tabletProcessB.png",
+    title: "Timely Delivery",
+    description:
+      "We understand the importance of deadlines. Count on us to deliver your projects on time, every time.",
+  },
+];
+---
+
+<section class="border-t border-t-[#667085] mb-24 flex flex-col gap-6">
+  <h4 class="mt-24 text-[#FF601F] text-base md:text-xl font-bold noto text-center">
+    OUR PROCESS
+  </h4>
+  <h4 class="redHat text-[#101828] text-[2rem] md:text-5xl xl:text-[4rem] font-semibold text-center">
+    What you can expect...
+  </h4>
+  <div class="container grid lg:grid-cols-3 gap-7 mt-5">
+    {
+      cards.map((card) => (
+        <div class="bg-[rgba(255,255,255,0.95)] border border-white rounded-lg card">
+          <div class="md:hidden lg:block w-full">
+            <img
+              src={card.image}
+              alt=""
+              class="rounded-t-lg object-cover w-full"
+            />
+          </div>
+          <div class="hidden md:block lg:hidden w-full">
+            <img
+              src={card.tabletImg}
+              alt=""
+              class="rounded-t-lg object-cover w-full"
+            />
+          </div>
+          <p
+            id={`${card.id}`}
+            class="text-center mt-8 noto text-lg font-bold text-[#101828]"
+          >
+            {card.title}
+          </p>
+          <p class="noto text-[#344054] leading-[1.6rem] px-1 text-center mt-2 mb-6 w-[80%] lg:w-full mx-auto">
+            {card.description}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .card {
+    backdrop-filter: blur(2px);
+  }
+</style>
+
+<script>
+  const sentence1 = document.getElementById("1");
+  const sentence2 = document.getElementById("2");
+  const sentence3 = document.getElementById("3");
+
+  sentence1.innerHTML = sentence1.innerHTML.replace(
+    "Collaboration",
+    '<span style="color: #FF601F;">Collaboration</span>'
+  );
+  sentence2.innerHTML = sentence2.innerHTML.replace(
+    "Talent",
+    '<span style="color: #FF601F;">Talent</span>'
+  );
+  sentence3.innerHTML = sentence3.innerHTML.replace(
+    "Timely",
+    '<span style="color: #FF601F;">Timely</span>'
+  );
+</script>
