@@ -1,0 +1,18 @@
+---
+const {firstWord} = Astro.props
+const {secondWord} = Astro.props
+const {description} = Astro.props
+---
+<div class="flex justify-center w-[1189px] h-[400px] bg-gradient-to-t from-gray-200 to-white rounded-2xl">
+<div class="w-[837px] h-[171px] font-semibold my-[5rem] ">
+    <h1 class="text-[72px] text-center">
+        <span class="text-[#FF601F] mr-[1rem]">
+            {firstWord}
+        </span>
+        <span class="text-[#101828]">
+            {secondWord}
+        </span>
+    </h1>
+    <p class="text-base font-normal text-center">{description}</p>
+</div>
+</div>

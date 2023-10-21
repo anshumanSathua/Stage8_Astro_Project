@@ -1,0 +1,56 @@
+---
+// import data from "/portfolio/data/faqData.json" ;
+import FAQCards from "./FAQCards.astro";
+const faqs = [
+    {
+      "id": 1,
+      "qustion": "What services does tifi.tv offer",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 2,
+      "qustion": "Do you provide custom solutions for unique projects",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 3,
+      "qustion": "How can I get started with your services?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 4,
+      "qustion": "Can you provide pricing information for your services?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 5,
+      "qustion": "What is the typical process when working with tifi.tv?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 6,
+      "qustion": "Can I see examples of your previous work?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 7,
+      "qustion": "Do you have any case studies or success stories to share?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    },
+    {
+      "id": 8,
+      "qustion": "What sets tifi.tv apart from other agencies?",
+      "answer": "Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling."
+    }
+  ]
+
+---
+
+<div class="w-full flex justify-center bg-[#FCFCFD]">
+<div>
+    <h1 class="text-[64px] text-center mb-2">FAQ</h1>
+    <div class="flex flex-wrap w-[1200px] mt-2">
+    {faqs.map(faq=> <FAQCards id={faq.id} question={faq.qustion} answer={faq.answer}/>)}
+    </div>
+</div>
+</div>
