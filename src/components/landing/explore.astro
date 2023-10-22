@@ -36,9 +36,9 @@ const cards = [
     speak louder than words. Our captivating content is a journey waiting for
     you. Join us and experience the magic of tifi.tv.
   </p>
-  <div class="flex flex-col lg:flex-row gap-8 mt-5">
+  <div class="flex flex-col xl:flex-row gap-8 mt-5">
     <div
-      class="bg-[#101828] w-full lg:w-[23.52083rem] rounded-lg border border-white"
+      class="bg-[#101828] w-full xl:w-[23.52083rem] rounded-lg border border-white"
     >
       <div class="block md:hidden">
         <img src="/landing/exploreMobA.png" alt="" class="rounded-t-lg" />
@@ -46,8 +46,8 @@ const cards = [
       <div class="hidden md:block lg:hidden">
         <img src="/landing/exploreTabA.png" alt="" class="rounded-t-lg" />
       </div>
-      <div class="hidden lg:block">
-        <img src="/landing/exploreA.png" alt="" class="rounded-t-lg" />
+      <div class="hidden lg:block w-full">
+        <img src="/landing/exploreA.png" alt="" class="rounded-t-lg w-full object-cover" />
       </div>
       <div class="p-4 space-y-3">
         <div class="flex gap-2">
@@ -75,18 +75,18 @@ const cards = [
         </p>
       </div>
     </div>
-    <div class="flex flex-col lg:flex-row gap-8">
+    <div class="flex flex-col lg:grid lg:grid-cols-2 xl:flex-row gap-8">
       {
         cards.map((card) => (
-          <div class="bg-[#101828] w-full lg:w-[23.52083rem] rounded-lg border border-white">
+          <div class="bg-[#101828] w-full lg:w-full xl:w-[23.52083rem] rounded-lg border border-white">
             <div class="block md:hidden">
               <img src={card.mobileImage} alt="" class="rounded-t-lg" />
             </div>
             <div class="hidden md:block lg:hidden">
               <img src={card.tabletImage} alt="" class="rounded-t-lg" />
             </div>
-            <div class="hidden lg:block">
-              <img src={card.image} alt="" class="rounded-t-lg" />
+            <div class="hidden lg:block w-full">
+              <img src={card.image} alt="" class="rounded-t-lg w-full object-cover" />
             </div>
             <div class="p-4 space-y-3">
               <div class="flex gap-3">

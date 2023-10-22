@@ -1,4 +1,6 @@
-<div class="custom-container h-[25rem] md:h-[35.875rem] rounded hero relative mx-auto">
+<div
+  class="lg:custom-container h-[25rem] md:h-[35.875rem] rounded hero relative mx-auto"
+>
   <div
     class="relative flex flex-col justify-center items-center gap-6 pt-16 md:pt-24 lg:pt-32 z-40"
   >
@@ -15,16 +17,21 @@
       of creativity and innovation.
     </p>
     <button
-      class="bg-[#FF601F] px-5 py-3 rounded-lg text-white text-base font-extrabold flex items-center gap-3 mt-3"
-      ><span>LET'S TALK!</span>
-      <img src="/landing/arrowUp.png" alt="arrow-up" /></button
+      class="bg-[#FF601F] px-5 py-3 rounded-lg text-white text-base font-extrabold mt-3"
+      ><a href="/GetInTouch" class="flex items-center gap-3">
+        <span>LET'S TALK!</span>
+        <img src="/landing/arrowUp.png" alt="arrow-up" /></a
+      ></button
     >
-  </div>
-  <div class="hidden md:block absolute bottom-0 left-0 z-10">
-    <img src="/landing/heroSideImg.png" alt="side-img" />
   </div>
   <div class="md:hidden absolute bottom-0 left-0 z-10">
     <img src="/landing/mobileHeroSideImgA.png" alt="side-img-B" />
+  </div>
+  <div class="hidden md:block xl:hidden absolute bottom-0 left-0 z-10 w-[70%] lg:w-[60%]">
+    <img src="/landing/heroSideImg.png" alt="side-img" class="w-[70%] lg:w-[60%] object-cover" />
+  </div>
+  <div class="hidden xl:block absolute bottom-0 left-0 z-10">
+    <img src="/landing/heroSideImg.png" alt="side-img" class="" />
   </div>
   <div class="md:hidden absolute bottom-0 right-0 z-20">
     <img src="/landing/mobileHeroSideImgB.png" alt="side-img-B" />
@@ -60,16 +67,16 @@
 
   @media (max-width: 640px) {
     .custom-container {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      /* margin-left: 2rem;
+      margin-right: 2rem; */
       max-width: 640px;
     }
   }
 
   @media (max-width: 768px) {
     .custom-container {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      /* margin-left: 2rem;
+      margin-right: 2rem; */
       max-width: 768px;
     }
 

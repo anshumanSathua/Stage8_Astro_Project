@@ -75,9 +75,11 @@ const cards = [
                 )}
               </div>
 
-              <button class="border border-[#98A2B3] py-3 px-5 w-fit shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-[#1D2939] text-base font-extrabold rounded-lg flex items-center gap-3 mt-12 md:mt-0">
-                <span>{card.button}</span>
-                <img src="/landing/arrowUpBlue.png" alt="" />
+              <button class="border border-[#98A2B3] py-3 px-5 w-fit shadow-[0px_14px_16px_0px_rgba(29,41,57,0.05)] text-[#1D2939] text-base font-extrabold rounded-lg mt-12 md:mt-0">
+                <a href={card.button === "SEE BUSINESSES" ? '/business' : '/ForIndividuals'} class="flex items-center gap-3">
+                  <span>{card.button}</span>
+                  <img src="/landing/arrowUpBlue.png" alt="" />
+                </a>
               </button>
             </div>
           </div>
