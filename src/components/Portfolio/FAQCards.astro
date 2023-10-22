@@ -5,6 +5,10 @@ const {answer} = Astro.props
 
 let isVisible = false;
 
+function toggleVisibility() {
+  isVisible = !isVisible;
+}
+
 ---
 
 <div id= {id} class="bg-[#F2F4F7] m-[0.5rem] rounded-lg">
