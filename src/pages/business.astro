@@ -1,217 +1,225 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import FAQ from "../components/Portfolio/FAQ.astro";
+import ContactForm from "../components/ContactForm/ContactForm.astro"
 ---
-<Layout title="Portfolio">
   <div class="container">
-    <div class="header-body">
-      <div class="header-hero">
-       
-        <div class="hero">
-          <h1>For <span> Businesses</span></h1>
-          <p>
-            We offer a rich palette of services designed to meet the diverse needs
-            of businesses. Whether it's unveiling a new product, igniting your
-            brand's presence, or enhancing internal communications, our video
-            editing services are tailored to your specific objectives.
+  <Layout title="Portfolio">
+      <div class="header-body">
+        <div class="header-hero">
+
+          <div class="hero">
+            <h1>For <span style="margin-left: 1rem">Businesses</span></h1>
+            <p>
+              We offer a rich palette of services designed to meet the diverse needs
+              of businesses. Whether it's unveiling a new product, igniting your
+              brand's presence, or enhancing internal communications, our video
+              editing services are tailored to your specific objectives.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="first-section">
+        <div class="first-div">
+          <div class="top-text">
+            <h1 class="first-section-title">Our Palette of <span>Corporate</span> Video Services</h1>
+            <p class="first-section-p">Unlocking the Power of Visual Storytelling for Your Business</p>
+          </div>
+          <div class="first-section-images-div">
+            <div class="image-div">
+              <img src="business-img/first.svg" alt="first-image" class="first-img" />
+              <p class="image-title">Product <span>Demonstrations</span></p>
+              <p class="image-p">
+                Present your products in their best light with dynamic and engaging
+                demonstrations that showcase their features and benefits.
+              </p>
+            </div>
+            <div class="image-div">
+              <img src="business-img/second.svg" alt="second-image" class="first-img" />
+              <p class="image-title">Promotional <span>Videos</span></p>
+              <p class="image-p">
+                Craft compelling promotional videos that captivate your audience,
+                drive conversions, and enhance brand visibility.
+              </p>
+            </div>
+            <div class="image-div">
+              <img src="business-img/third.svg" alt="third-image" class="first-img" />
+              <h1 class="image-title"><span>Internal</span> Communications</h1>
+              <p class="image-p">
+                Foster strong internal connections through effective video
+                communication, making sure your message resonates with your team.
+              </p>
+            </div>
+          </div>
+          <div class="bottom-div">
+            <p>
+              We believe that every video has a story to tell, and every story has a
+              message that connects. Our corporate video services are not just about
+              visuals; they're about creating a lasting impact on your branding and
+              marketing goals.
+            </p>
+            <button>LET'S TALK
+              <img src="business-img/white-arrow.svg" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="second-section">
+        <div class="second-div">
+          <div second-top-div>
+            <p class="second-top-div-p">WHAT WE CAN DO FOR YOU</p>
+            <h1 class="custom">Custom Solutions for...</h1>
+          </div>
+          <div class="box-div">
+            <div class="box">
+              <h3>Branding & Marketing</h3>
+              <p> <img src="business-img/tick-icon.svg" />Brand Identity Videos</p>
+              <p> <img src="business-img/tick-icon.svg" />Product and Service Promotion</p>
+              <p> <img src="business-img/tick-icon.svg" />Event Videos</p>
+              <p> <img src="business-img/tick-icon.svg" />Recruitment and HR Videos</p>
+              <p> <img src="business-img/tick-icon.svg" />Training and Educational Videos</p>
+              <p> <img src="business-img/tick-icon.svg" />And many more</p>
+              <p class="box-p">We're here to help you. Reach out to us as soon as possible!</p>
+            </div>
+
+            <div class="box2">
+              <h3>Digital Marketing</h3>
+              <p> <img src="business-img/tick-icon.svg" /> Social Media Videos</p>
+              <p> <img src="business-img/tick-icon.svg" /> Ad Campaign Videos</p>
+              <p> <img src="business-img/tick-icon.svg" /> Content Marketing Videos</p>
+              <p> <img src="business-img/tick-icon.svg" /> Email Marketing Videos</p>
+              <p> <img src="business-img/tick-icon.svg" /> YouTube and Online Video Content</p>
+              <p> <img src="business-img/tick-icon.svg" />And many more</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <img src="/business-img/grey.svg" class="image" />
+        <div class="third-div">
+          <div>
+            <p class="third-div-title">Our Impact on
+              Businesses</p>
+            <p class="third-p">Stories of transformation, engagement, and success.</p>
+          </div>
+          <div class="figures-div">
+            <div class="figure">
+              <p class="figure-p">3000<span>+</span></p>
+              <p>Businesses empowered</p>
+            </div>
+            <div class="figure">
+              <p class="figure-p">50<span>%</span></p>
+              <p>growth in online engagement</p>
+            </div>
+            <div class="figure">
+              <p class="figure-p">100m<span>+</span></p>
+              <p>Total Views</p>
+            </div>
+          </div>
+          <p class="third-buttom">
+            These figures reflect the tangible results we deliver to businesses
+            across diverse sectors. Our video editing and storytelling expertise
+            drive growth and success
           </p>
         </div>
+      </section>
+
+      <section class="fourth-section">
+        <div class="fourth-div">
+          <div class="fourth-top-div">
+            <p class="fourth-top-div-p"> Case <span>Studies</span></p>
+            <p class="fourth-dv-p"> Stories of transformation, engagement, and success.</p>
+          </div>
+          <div class="cards-div">
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg" /></button>
+            </div>
+
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
+            </div>
+
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
+            </div>
+
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
+            </div>
+
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
+            </div>
+
+            <div class="card">
+              <img src="business-img/card-icon.svg" alt="card-icon" />
+              <p class="card-title">Wanderlust Chronicles</p>
+              <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel
+                bookings
+                for our client
+              </p>
+              <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifth-section">
+        <div class="fifth-top">
+          <p class="fifth-section-title">Elevating Your Brand's Identity</p>
+          <p class="fifth-top-p">Your brand's identity is at the core of your business, and it's our privilege to
+            enhance
+            it through video
+            storytelling. We believe that video is the medium that connects brands to their audience, and we're here to
+            craft your unique narrative.</p>
+        </div>
+        <div class="fifth-bottom">
+          <div class="empty-box"></div>
+          <p class="fifth-p">Our expertise in video storytelling goes beyond the visual. It's about weaving a narrative
+            that speaks directly to your audience, creating a connection that goes beyond words. With tifi.tv, your
+            branding and marketing efforts are not just campaigns; they're stories waiting to be told.</P>
+        </div>
+      </section>
+      <ContactForm />
+      <div class="faq">
+        <FAQ />
       </div>
-    </div>
-
-    <section class="first-section">
-      <div class="first-div">
-        <div class="top-text">
-          <h1 class="first-section-title">Our Palette of <span>Corporate</span> Video Services</h1>
-          <p class="first-section-p">Unlocking the Power of Visual Storytelling for Your Business</p>
-        </div>
-        <div class="first-section-images-div">
-          <div class="image-div">
-            <img src="business-img/first.svg" alt="first-image" class="first-img" />
-            <p class="image-title">Product <span>Demonstrations</span></p>
-            <p class="image-p">
-              Present your products in their best light with dynamic and engaging
-              demonstrations that showcase their features and benefits.
-            </p>
-          </div>
-          <div class="image-div">
-            <img src="business-img/second.svg" alt="second-image" class="first-img" />
-            <p class="image-title">Promotional <span>Videos</span></p>
-            <p class="image-p">
-              Craft compelling promotional videos that captivate your audience,
-              drive conversions, and enhance brand visibility.
-            </p>
-          </div>
-          <div class="image-div">
-            <img src="business-img/third.svg" alt="third-image" class="first-img" />
-            <h1 class="image-title"><span>Internal</span> Communications</h1>
-            <p class="image-p">
-              Foster strong internal connections through effective video
-              communication, making sure your message resonates with your team.
-            </p>
-          </div>
-        </div>
-        <div class="bottom-div">
-          <p>
-            We believe that every video has a story to tell, and every story has a
-            message that connects. Our corporate video services are not just about
-            visuals; they're about creating a lasting impact on your branding and
-            marketing goals.
-          </p>
-          <button>LET'S TALK
-            <img src="business-img/white-arrow.svg" />
-          </button>
-        </div>
-      </div>
-    </section>
-    </Layout>
-
-    <section class="second-section">
-      <div class="second-div">
-        <div second-top-div>
-          <p class="second-top-div-p">WHAT WE CAN DO FOR YOU</p>
-          <h1 class="custom">Custom Solutions for...</h1>
-        </div>
-        <div class="box-div">
-          <div class="box">
-            <h3>Branding & Marketing</h3>
-            <p> <img src="business-img/tick-icon.svg" />Brand Identity Videos</p>
-            <p> <img src="business-img/tick-icon.svg" />Product and Service Promotion</p>
-            <p> <img src="business-img/tick-icon.svg" />Event Videos</p>
-            <p> <img src="business-img/tick-icon.svg" />Recruitment and HR Videos</p>
-            <p> <img src="business-img/tick-icon.svg" />Training and Educational Videos</p>
-            <p> <img src="business-img/tick-icon.svg" />And many more</p>
-            <p class="box-p">We're here to help you. Reach out to us as soon as possible!</p>
-          </div>
-
-          <div class="box2">
-            <h3>Digital Marketing</h3>
-            <p> <img src="business-img/tick-icon.svg" /> Social Media Videos</p>
-            <p> <img src="business-img/tick-icon.svg" /> Ad Campaign Videos</p>
-            <p> <img src="business-img/tick-icon.svg" /> Content Marketing Videos</p>
-            <p> <img src="business-img/tick-icon.svg" /> Email Marketing Videos</p>
-            <p> <img src="business-img/tick-icon.svg" /> YouTube and Online Video Content</p>
-            <p> <img src="business-img/tick-icon.svg" />And many more</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="third-section">
-      <img src="/business-img/grey.svg" class="image" />
-      <div class="third-div">
-        <div>
-          <p class="third-div-title">Our Impact on
-            Businesses</p>
-          <p class="third-p">Stories of transformation, engagement, and success.</p>
-        </div>
-        <div class="figures-div">
-          <div class="figure">
-            <p class="figure-p">3000<span>+</span></p>
-            <p>Businesses empowered</p>
-          </div>
-          <div class="figure">
-            <p class="figure-p">50<span>%</span></p>
-            <p>growth in online engagement</p>
-          </div>
-          <div class="figure">
-            <p class="figure-p">100m<span>+</span></p>
-            <p>Total Views</p>
-          </div>
-        </div>
-        <p class="third-buttom">
-          These figures reflect the tangible results we deliver to businesses
-          across diverse sectors. Our video editing and storytelling expertise
-          drive growth and success
-        </p>
-      </div>
-    </section>
-
-    <section class="fourth-section">
-      <div class="fourth-div">
-        <div class="fourth-top-div">
-          <p class="fourth-top-div-p"> Case <span>Studies</span></p>
-          <p class="fourth-dv-p"> Stories of transformation, engagement, and success.</p>
-        </div>
-        <div class="cards-div">
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg" /></button>
-          </div>
-
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
-          </div>
-
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
-          </div>
-
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
-          </div>
-
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
-          </div>
-
-          <div class="card">
-            <img src="business-img/card-icon.svg" alt="card-icon" />
-            <p class="card-title">Wanderlust Chronicles</p>
-            <p class="fourth-p">The project garnered over 1 million views and sparked a 20% increase in travel bookings
-              for our client
-            </p>
-            <button>LEARN MORE <img src="business-img/black arrow.svg"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="fifth-section">
-      <div class="fifth-top">
-        <p class="fifth-section-title">Elevating Your Brand's Identity</p>
-        <p class="fifth-top-p">Your brand's identity is at the core of your business, and it's our privilege to enhance
-          it through video
-          storytelling. We believe that video is the medium that connects brands to their audience, and we're here to
-          craft your unique narrative.</p>
-      </div>
-      <div class="fifth-bottom">
-        <div class="empty-box"></div>
-        <p class="fifth-p">Our expertise in video storytelling goes beyond the visual. It's about weaving a narrative
-          that speaks directly to your audience, creating a connection that goes beyond words. With tifi.tv, your
-          branding and marketing efforts are not just campaigns; they're stories waiting to be told.</P>
-      </div>
-    </section>
-  </div>
-  <div class="faq">
-   <FAQ />
-   </div>
   </layout>
-
+    </div>
 
 
 
@@ -235,12 +243,12 @@ span {
 }
 
 .container {
-  background-color: #FFF;
+ background-color: #fff;
 }
 
 .header-body {
   background-color: #FFF;
-  padding: 0 10rem 6rem;
+  padding: 0 5rem 6rem;
   width: 100%;
 }
 
@@ -260,7 +268,7 @@ span {
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
   justify-items: center;
-  width: 70%;
+  width: 100%;
   padding-top: 6.25rem;
   padding-bottom: 8.625rem;
   row-gap: 1.5rem;
@@ -283,18 +291,22 @@ span {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+  width: 70%;
 }
 
 /* first section */
 
 .first-section {
   background-color: #F2F4F7;
-  padding: 6rem 10rem;
+  padding: 6rem 5rem;
+  width: 100%;
 }
 
 .first-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-section-title {
@@ -420,7 +432,7 @@ span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: flex-start;
-  justify-items: center;
+  justify-content: center;
   column-gap: 32px;
 }
 
@@ -455,7 +467,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-items: flex-start;
+  justify-content: flex-start;
   gap: 10px;
   border-radius: 16px;
   width: 100%;
@@ -476,7 +488,7 @@ span {
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
-  padding: 0 10rem;
+  padding: 0 5rem;
   align-items: center;
   justify-content: center;
   z-index: 10;
@@ -526,12 +538,14 @@ span {
 
 /* fourth-section */
 
+
 .fourth-div {
   background-color: #F2F4F7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 10rem;
+  padding: 6rem 5rem;
+  width: 100%;
 }
 
 .fourth-top-div-p {
@@ -544,18 +558,20 @@ span {
   text-align: center;
 }
 .cards-div {
-  width: fit-content;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   place-items: flex-start;
-  justify-items: center;
+  justify-content: center;
   row-gap: 48px;
-  column-gap: 14px;
+  column-gap: 26px;
   margin-top: 48px;
+  position: relative;
 }
 
 .card {
+  width: 100%;
   padding: 30px 12px;
   background-color: #fff;
   border-radius: 8px;
@@ -595,7 +611,7 @@ span {
 .fifth-section {
   background-color: #585D69;
   color: #fff;
-  padding: 6rem 10rem;
+  padding: 6rem 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -616,7 +632,7 @@ line-height: 160%;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 100px;
   margin-top: 64px;
-  place-items: center;
+  place-items: flex-start;
 }
 .empty-box {
   background-color: #6C707B;
@@ -628,7 +644,7 @@ line-height: 160%;
 }
 
 .faq {
-  padding: 4rem 10rem;
+  padding: 4rem 5rem;
 }
 
 /* media queries */
@@ -693,7 +709,7 @@ line-height: 160%;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    width: 530px;
+    width: 70%;
   }
   /* first section */
 
@@ -870,6 +886,10 @@ line-height: 160%;
 
 
 @media(min-width: 280px) and (max-width: 640px) {
+ .container {
+  width: 200%;
+  padding: 0 1rem;
+ }
   .header-body {
     width: 100%;
     padding-left: 16px;
