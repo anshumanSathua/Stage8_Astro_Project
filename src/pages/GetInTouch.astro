@@ -2,11 +2,18 @@
 import Navbar from '../components/Getintouch/Navbar.astro';
 import Footer from "../components/Getintouch/Footer.astro";
 import Contacts from '../components/Form/Contacts.astro';
-import HeaderText from '../components/Form/HeaderText.astro'
+// import HeaderText from '../components/Form/HeaderText.astro'
+const formTitle = "GET IN TOUCH."
+const formDescription = " In just 48 hours, our experts will meticulously assess your video content and reveal untapped opportunities for enhancing your brand and visual storytelling."
+
+
 ---
 <div>
     <Navbar/>
-    <HeaderText/>
-    <Contacts/>
+    <!-- <HeaderText/> -->
+    <div class="flex justify-center">
+        <Contacts formTitle={formTitle} formDescription={formDescription}/>
+    </div>
+    <!-- <Contacts/> -->
     <Footer/>
 </div>
