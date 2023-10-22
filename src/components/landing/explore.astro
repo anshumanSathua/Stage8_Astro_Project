@@ -1,0 +1,113 @@
+---
+const cards = [
+  {
+    id: 1,
+    tag: "Tools",
+    topic: "7 Essential Video Editing Techniques",
+    image: "/landing/exploreB.png",
+    tabletImage: "/landing/exploreTabB.png",
+    mobileImage: "/landing/exploreMobB.png",
+    text: "Discover how storytelling isn't just a technique but the heart of compelling video content. Learn how connecting with your audience's emotions can leave a lasting impact on them.",
+  },
+  {
+    id: 2,
+    tag: "Travel",
+    topic: "The Impact of Color Grading in Video Editing",
+    image: "/landing/exploreC.png",
+    tabletImage: "/landing/exploreTabC.png",
+    mobileImage: "/landing/exploreMobC.png",
+    text: "Discover how storytelling isn't just a technique but the heart of compelling video content. Learn how connecting with your audience's emotions can leave a lasting impact on them.",
+  },
+];
+---
+
+<div
+  class="container py-16 md:py-24 flex flex-col items-center gap-5 bg-[#F2F4F7]"
+>
+  <h4
+    class="text-[#1D2939] redHat text-[2rem] md:text-5xl xl:text-[4rem] font-semibold text-center"
+  >
+    Explore Our Captivating Content!
+  </h4>
+  <p
+    class="noto text-[#344054] text-base text-center w-full md:w-[80%] lg:w-[65%]"
+  >
+    Uncover a world where stories come alive, emotions resonate, and visuals
+    speak louder than words. Our captivating content is a journey waiting for
+    you. Join us and experience the magic of tifi.tv.
+  </p>
+  <div class="flex flex-col xl:flex-row gap-8 mt-5">
+    <div
+      class="bg-[#101828] w-full xl:w-[23.52083rem] rounded-lg border border-white"
+    >
+      <div class="block md:hidden">
+        <img src="/landing/exploreMobA.png" alt="" class="rounded-t-lg" />
+      </div>
+      <div class="hidden md:block lg:hidden">
+        <img src="/landing/exploreTabA.png" alt="" class="rounded-t-lg" />
+      </div>
+      <div class="hidden lg:block w-full">
+        <img src="/landing/exploreA.png" alt="" class="rounded-t-lg w-full object-cover" />
+      </div>
+      <div class="p-4 space-y-3">
+        <div class="flex gap-2">
+          <span
+            class="noto text-sm text-[#98A2B3] font-normal border-r border-r-[#475467] pr-2"
+          >
+            October 12, 2023
+          </span>
+          <span
+            class="noto text-sm text-[#98A2B3] font-normal border-r border-r-[#475467] pr-2"
+          >
+            8 mins
+          </span>
+          <span class="text-[#FF601F] text-sm noto font-bold">
+            Storytelling
+          </span>
+        </div>
+        <h4 class="text-white font-bold text-2xl">
+          The Art of Storytelling Through Video
+        </h4>
+        <p class="noto text-[#98A2B3] leading-[1.6rem]">
+          Discover how storytelling isn't just a technique but the heart of
+          compelling video content. Learn how connecting with your audience's
+          emotions can leave a lasting impact on them.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 xl:flex-row gap-8">
+      {
+        cards.map((card) => (
+          <div class="bg-[#101828] w-full lg:w-full xl:w-[23.52083rem] rounded-lg border border-white">
+            <div class="block md:hidden">
+              <img src={card.mobileImage} alt="" class="rounded-t-lg" />
+            </div>
+            <div class="hidden md:block lg:hidden">
+              <img src={card.tabletImage} alt="" class="rounded-t-lg" />
+            </div>
+            <div class="hidden lg:block w-full">
+              <img src={card.image} alt="" class="rounded-t-lg w-full object-cover" />
+            </div>
+            <div class="p-4 space-y-3">
+              <div class="flex gap-3">
+                <span class="noto text-sm text-[#98A2B3] font-normal border-r border-r-[#475467] pr-3">
+                  October 12, 2023
+                </span>
+                <span class="noto text-sm text-[#98A2B3] font-normal border-r border-r-[#475467] pr-3">
+                  8 mins
+                </span>
+                <span class="text-[#FF601F] text-sm noto font-bold">
+                  {card.tag}
+                </span>
+              </div>
+              <h4 class="text-white font-bold text-2xl">{card.topic}</h4>
+              <p class="lg:hidden noto text-[#98A2B3] leading-[1.6rem]">
+                {card.text}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>

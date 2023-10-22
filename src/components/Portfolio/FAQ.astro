@@ -48,8 +48,8 @@ const faqs = [
 
 <div class="w-full flex justify-center bg-[#FCFCFD]">
 <div>
-    <h1 class="text-[64px] text-center mb-2">FAQ</h1>
-    <div class="flex flex-wrap w-[1200px] mt-2">
+    <h1 class="text-[64px] text-[#1D2939] text-center mb-2">FAQ</h1>
+    <div class="grid md:grid-cols-2 mt-2">
     {faqs.map(faq=> <FAQCards id={faq.id} question={faq.qustion} answer={faq.answer}/>)}
     </div>
 </div>

@@ -1,0 +1,49 @@
+---
+import FormTabs from "../resources/FormTabs.html";
+import Form from "../resources/Form.astro";
+const {formTitle} = Astro.props;
+const {formDescription} = Astro.props;
+---
+
+<section class="py-[6rem] relative text-[#1D2939]">
+    <div class="custom-container mx-auto">
+      <h2
+        class="uppercase font-bold block md:hidden
+        lg:block text-3xl lg:text-7xl text-center"
+      >
+        {formTitle}
+      </h2>
+      
+      <p class="text-center pt-6 md:max-w-[70%] mx-auto text-gray-700">
+        {formDescription}
+      </p>
+    </div>
+    <FormTabs />
+    <Form />
+    <img
+      src="./resouces/Vector.svg"
+      alt=""
+      class="absolute block top-[-20%] right-6 opacity-40
+      z-0 md:hidden lg:block lg:top-[64.2%] lg:right-0"
+    />
+  </section>
+  
+  <style>
+    .custom-container {
+      max-width: 1200px;
+    }
+  
+    /* Extra small devices (phones, 600px and down) */
+    @media (max-width: 600px) {
+      .custom-container {
+        padding-inline: 1rem;
+      }
+    }
+  
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      .custom-container {
+        padding-inline: 1.5rem;
+      }
+    }
+  </style>
