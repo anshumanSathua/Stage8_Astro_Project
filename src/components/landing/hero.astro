@@ -1,5 +1,5 @@
 <div
-  class="lg:custom-container h-[25rem] md:h-[35.875rem] rounded hero relative mx-auto"
+  class="h-[25rem] md:h-[35.875rem] rounded hero relative mx-auto max-w-[1145px]"
 >
   <div
     class="relative flex flex-col justify-center items-center gap-6 pt-16 md:pt-24 lg:pt-32 z-40"
@@ -27,8 +27,14 @@
   <div class="md:hidden absolute bottom-0 left-0 z-10">
     <img src="/landing/mobileHeroSideImgA.png" alt="side-img-B" />
   </div>
-  <div class="hidden md:block xl:hidden absolute bottom-0 left-0 z-10 w-[70%] lg:w-[60%]">
-    <img src="/landing/heroSideImg.png" alt="side-img" class="w-[70%] lg:w-[60%] object-cover" />
+  <div
+    class="hidden md:block xl:hidden absolute bottom-0 left-0 z-10 w-[70%] lg:w-[60%]"
+  >
+    <img
+      src="/landing/heroSideImg.png"
+      alt="side-img"
+      class="w-[70%] lg:w-[60%] object-cover"
+    />
   </div>
   <div class="hidden xl:block absolute bottom-0 left-0 z-10">
     <img src="/landing/heroSideImg.png" alt="side-img" class="" />
@@ -61,47 +67,31 @@
     font-family: "Noto Sans", sans-serif;
   }
 
-  .custom-container {
+  /* .customs-container {
     max-width: 1145px;
   }
 
-  @media (max-width: 640px) {
-    .custom-container {
-      /* margin-left: 2rem;
-      margin-right: 2rem; */
-      max-width: 640px;
+  @media (max-width: 1024px) {
+    .customs-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 1024px;
     }
   }
 
-  @media (max-width: 768px) {
-    .custom-container {
-      /* margin-left: 2rem;
-      margin-right: 2rem; */
-      max-width: 768px;
-    }
-
-    @media (max-width: 1024px) {
-      .custom-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        max-width: 1024px;
-      }
-    }
-
-    @media (max-width: 1280px) {
-      .custom-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        max-width: 1280px;
-      }
-    }
-
-    @media (max-width: 1300px) {
-      .custom-container {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        max-width: 1300px;
-      }
+  @media (max-width: 1280px) {
+    .customs-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 1280px;
     }
   }
+
+  @media (max-width: 1300px) {
+    .customs-container {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      max-width: 1300px;
+    }
+  } */
 </style>
