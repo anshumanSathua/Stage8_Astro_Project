@@ -5,6 +5,9 @@ import WhatWeCanDo from "./WhatWeCanDo.astro";
 import CaseStudies from "./CaseStudies.astro";
 import Faq from "./Faq.astro";
 import Contact from "./contact.astro";
+import ContactForm from "../ContactForm/ContactForm.astro";
+
+const formTitle = "LET US KNOW HOW WE CAN HELP YOUR BUSINESS."
 ---
 
 <head>
@@ -22,6 +25,7 @@ import Contact from "./contact.astro";
   <UnlockYourPotential />
   <WhatWeCanDo />
   <CaseStudies />
-  <Contact />
+  <!-- <Contact /> -->
+  <ContactForm formTitle={formTitle}/>
   <Faq />
 </div>
